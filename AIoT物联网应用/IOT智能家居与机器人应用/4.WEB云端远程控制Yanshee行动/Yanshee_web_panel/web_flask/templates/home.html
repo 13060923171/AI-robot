@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block body %}
+ <p>welcome</p>
+  <form action="/led/1" method=post>
+    <input type=submit value="Led On" />
+  </form>
+  <form action="/led/2" method=post>
+    <input type=submit value="Led Off"/>
+  </form>
+  <form action="/robot/1" method=post>
+    <input type=submit value="Forward"/>
+  </form>
+  <form action="/robot/2" method=post>
+    <input type=submit value="Backward"/>
+  </form>
+  <form action="/robot/3" method=post>
+    <input type=submit value="Move Left"/>
+  </form>
+  <form action="/robot/4" method=post>
+    <input type=submit value="Move Right"/>
+  </form>
+  <form action="/robot/5" method=post>
+    <input type=submit value="Raise Hand"/>
+  </form>
+  <form action="/robot/6" method=post>
+    <input type=submit value="Robot Bow"/>
+  </form>
+  <form action="/robot/7" method=post>
+    <input type=submit value="Say Something"/>
+  </form>
+  <form action="/robot/8" method=post>
+    <input type=submit value="STOP"/>
+  </form>
+{% endblock %}

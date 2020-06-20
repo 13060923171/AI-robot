@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+</head>
+
+<body>
+<center>
+    <div>
+        <h1>机器人家居系统登录</h1>
+        <form method="post">
+            <h2>账户:<input type="text" name="account" style="height:30px"></h2><br>
+            <h2>密码:<input type="password" name="pwd" style="height:30px"></h2><br>
+            <center>
+                <button style="width:60px;height:50px;background-color:gray"><h3>登录</h3></button>
+            </center>
+        </form>
+
+        {% if login %}
+        <a>登录状态：{{ login }} </a>
+        {% endif %}
+
+        <!--        <progress value="50" max="100"></progress>-->
+        <br>
+        <!--        机器人头部舵机角度:<input type="number" name="points" min="0" max="180" value="90" style="width:50px;height:50px"/>-->
+        <br>
+    </div>
+</center>
+
+
+</body>
+</html>

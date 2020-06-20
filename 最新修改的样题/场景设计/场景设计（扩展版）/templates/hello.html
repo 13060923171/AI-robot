@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>机器人家居系统</title>
+</head>
+
+
+<body>
+<center>
+    {% if name %}
+    <a>你好 {{ name }} 欢迎使用家居系统 ！</a>
+    {% endif %}
+
+    {% if login %}
+    <a>登录状态：{{ login }} </a>
+    {% endif %}
+    <br>
+    {% if temperature %}
+    <a>当前温度为：{{ temperature }} ！</a>
+    {% endif %}
+    <form action="/1" method="post">
+        <!--        <input type="submit" value="post请求" name="bow"/>-->
+        <p></p>
+        <button style="background-color:green"><h2>回家</h2></button>
+    </form>
+
+    <p>
+        <!-- http://127.0.0.1:8000 -->
+        <a href="https://www.baidu.com/">机器人视频流地址8000端口</a>
+    </p>
+
+    <form action="/2" method="post">
+        <button style="background-color:red"><h2>离家</h2></button>
+    </form>
+
+    <p></p>
+    {% if angle %}
+    <a>当前头部角度为： {{ angle }} ！</a>
+    {% endif %}
+    <form action="/3" method="post">
+        机器人头部舵机角度:<input type="number" name="points" min="45" max="135" value="90" style="width:40px;height:15px"/>
+        <button>确定</button>
+    </form>
+    <p></p>
+    <iframe src="http://127.0.0.1:8000" width="640" height="480">视频流端口</iframe>
+</center>
+</body>
+
+
+</html>

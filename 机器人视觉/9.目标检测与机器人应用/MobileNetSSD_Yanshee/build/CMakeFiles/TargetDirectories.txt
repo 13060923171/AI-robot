@@ -1,0 +1,3 @@
+/home/pi/Desktop/MobileNet_me/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/MobileNet_me/build/CMakeFiles/edit_cache.dir
+/home/pi/Desktop/MobileNet_me/build/CMakeFiles/MobileNetSSD.dir
